@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<HBox xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.miniproject3.HomeController">
+
+   <VBox prefWidth="300"
+         alignment="CENTER"
+         spacing="15"
+         style="-fx-background-color: red;">
+
+
+      <ImageView fitHeight="120" fitWidth="120">
+         <image>
+            <Image url="@image/2083417.png"/>
+         </image>
+      </ImageView>
+
+      <Label text="Company"
+             style="-fx-text-fill: white; -fx-font-size: 20px; -fx-font-weight: bold;" />
+
+      <Label text="Management"
+             style="-fx-text-fill: white; -fx-font-size: 20px; -fx-font-weight: bold;" />
+
+      <Label text="System"
+             style="-fx-text-fill: white; -fx-font-size: 20px; -fx-font-weight: bold;" />
+
+   </VBox>
+
+   <VBox prefWidth="300"
+         alignment="CENTER"
+         spacing="20"
+         style="-fx-background-color: #f2f2f2;">
+
+      <Button fx:id="clientBtn"
+              text="Clients"
+              onAction="#onClientClick"
+              prefWidth="200"
+              style="-fx-background-color: red; -fx-text-fill: white; -fx-font-size: 14px;" />
+
+      <Button text="Button"
+              onAction="#onButton1Click"
+              prefWidth="200"
+              style="-fx-background-color: red; -fx-text-fill: white;" />
+
+      <Button text="Button"
+              prefWidth="200"
+              style="-fx-background-color: red; -fx-text-fill: white;" />
+
+      <Region prefHeight="40"/>
+
+      <Button fx:id="exitBtn"
+              text="Exit"
+              onAction="#onExitClick"
+              prefWidth="200"
+              style="-fx-background-color: red; -fx-text-fill: white;" />
+
+   </VBox>
+
+</HBox>
